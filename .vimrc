@@ -69,7 +69,7 @@ set laststatus=2
 
 set hidden
 let g:racer_cmd = "/home/marco/.cargo/bin/racer"
-let $RUST_SRC_PATH="/home/marco/sorgenti-compilati/rustsrc/rustc-1.6.0/src"
+let $RUST_SRC_PATH="/home/marco/git/rust"
 let g:rustfmt_autosave = 1
 
 " Ctrl-S abilitato
