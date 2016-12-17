@@ -66,6 +66,9 @@ set undolevels=700
 
 " Airline
 set laststatus=2
+let g:airline_powerline = 1
+let g:airline_powerline_fonts = 1 
+set t_Co=256
 
 set hidden
 let g:racer_cmd = "/home/marco/.cargo/bin/racer"
@@ -89,3 +92,14 @@ map <C-l> :tabnext<CR>
 map <C-h> :tabprev<CR> 
 
 nnoremap <C-k> :YcmCompleter GoTo<CR>
+
+nnoremap :Q :q
+
+" nnoremap :tf :tabfind
+" nnoremap :tn :tabnew
+
+nnoremap <Left> :tabprev<CR>
+nnoremap <Right> :tabnext<CR>
+nnoremap <Up> <NOP>
+nnoremap <Down> <NOP>
+
