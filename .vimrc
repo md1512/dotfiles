@@ -72,7 +72,7 @@ set t_Co=256
 
 set hidden
 let g:racer_cmd = "/home/marco/.cargo/bin/racer"
-let $RUST_SRC_PATH="/home/marco/git/rust"
+let $RUST_SRC_PATH="/home/marco/git/rust/src"
 let g:rustfmt_autosave = 1
 
 " Ctrl-S abilitato
@@ -87,10 +87,6 @@ autocmd! bufwritepost .vimrc source%
 set pastetoggle=<F2>
 set clipboard=unnamed
 
-" Tab movement
-map <C-l> :tabnext<CR> 
-map <C-h> :tabprev<CR> 
-
 nnoremap <C-k> :YcmCompleter GoTo<CR>
 
 nnoremap :Q :q
@@ -98,8 +94,19 @@ nnoremap :Q :q
 " nnoremap :tf :tabfind
 " nnoremap :tn :tabnew
 
+" Tabs navigation
+map <C-l> :tabnext<CR>
+map <C-h> :tabprev<CR>
 nnoremap <Left> :tabprev<CR>
 nnoremap <Right> :tabnext<CR>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Splits navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
